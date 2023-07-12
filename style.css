@@ -56,9 +56,9 @@ main section{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid red;
+    /* border: solid red; */
     height: 350px;
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -106,13 +106,19 @@ main section{
     display: flex;
     width: inherit;
     gap: 2em;
-    padding: 1em 10%;
+    padding: 1em 15em;
     margin: 0 auto;
-    border: solid magenta;
+    /* border: solid magenta; */
 }
 
 .wellcome figure img {
     height: 300px;
+    filter: grayscale(.7);
+    transition: all 250ms ease-in-out;
+}
+.wellcome figure img:hover {
+    height: 300px;
+    filter: none;
 }
 
 .wellcome article {
@@ -120,10 +126,11 @@ main section{
     flex-direction: column;
     gap: 2em;
     justify-content: center;
+    text-align: center;
 }
 
 .services {
-    border: solid yellow;
+    /* border: solid yellow; */
     padding: 1em;
 }
 
@@ -192,7 +199,7 @@ footer div {
 }
 
 .location {
-    border: solid cyan;
+    /* border: solid cyan; */
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -212,6 +219,33 @@ footer div {
     border-radius: 5px;
     margin: 0 auto;
 }
+.our-works{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.our-works{
+    font-size: 22px;
+    /* border: solid chocolate; */
+}
+.gallery{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3,1fr);
+}
+.gallery figure{
+    width: inherit;
+}
+.gallery figure img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(.7) sepia(.5);
+    transition: all 250ms ease-in-out;
+}
+.gallery figure img:hover{
+    filter: none;
+}
+
 
 @media (max-width: 800px) {
     .slogan-section{
@@ -220,6 +254,7 @@ footer div {
     .wellcome {
         flex-direction: column;
         text-align: center;
+        padding: 1em 2em;
     }
 
     .wellcome figure {
@@ -229,6 +264,10 @@ footer div {
         display: flex;
         flex-direction: column;
     }
+    .location iframe{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
     .services ul{
         display: flex;
         flex-direction: column;
@@ -237,7 +276,7 @@ footer div {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: #2C271E;
+        background-color: #2C271E90;
         border-radius: 5px;
     }
     .services ul li div{
@@ -249,5 +288,12 @@ footer div {
         display: flex;
         padding: .5em;
     }
-
+    .gallery{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .our-works h3{
+        text-align: center;
+    }
 }
