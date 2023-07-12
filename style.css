@@ -8,7 +8,6 @@ nav {
     height: 40px;
     align-items: end;
     justify-content: space-between;
-    padding: 0 10px 5px 10px;
     background-color: #2C271E;
     align-items: center;
     margin-bottom: 1em;
@@ -226,6 +225,7 @@ footer div {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    text-align: center;
 }
 
 .our-works {
