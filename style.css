@@ -4,13 +4,20 @@ html * {
 }
 
 nav {
-    display: flex;
     height: 40px;
+    width: 100%;
+    background-color: #2C271E;
+}
+
+.nav-content {
+    display: flex;
+    height: inherit;
     align-items: end;
     justify-content: space-between;
-    background-color: #2C271E;
+    margin: 0 auto;
     align-items: center;
     margin-bottom: 1em;
+    max-width: 1200px;
 }
 
 nav a {
@@ -43,7 +50,7 @@ body {
 
 main {
     max-width: 1200px;
-    padding: 0 10%;
+    padding: 0 0;
     margin: 0 auto;
 }
 
@@ -135,6 +142,12 @@ main section {
     padding: 1em;
 }
 
+.services header {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 22px;
+}
+
 .services figure img {
     width: 100px;
     border-radius: 100%;
@@ -158,10 +171,7 @@ footer {
     height: 40px;
     width: 100%;
     background-color: #2C271E;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1em;
+    
 }
 
 footer a {
@@ -182,6 +192,14 @@ footer div {
     display: flex;
     height: inherit;
     gap: 5px;
+}
+.footer-content{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1em;
 }
 
 .social-button {
@@ -246,12 +264,17 @@ footer div {
 .gallery figure img {
     width: 100%;
     height: auto;
+    aspect-ratio: 1/1;
     filter: grayscale(.7) sepia(.5);
     transition: all 250ms ease-in-out;
 }
 
 .gallery figure img:hover {
     filter: none;
+}
+
+hr {
+    border-color: #DAC297;
 }
 
 
@@ -313,6 +336,7 @@ footer div {
         display: grid;
         gap: 1em;
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 1em;
     }
 
     .our-works h3 {
@@ -333,5 +357,11 @@ footer div {
 
     .slogan h2 {
         font-size: 1.2em;
+    }
+    .nav-content{
+        padding: 0 1em;
+    }
+    .footer-content{
+        padding: 0 1em;
     }
 }
