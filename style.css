@@ -296,4 +296,17 @@ footer div {
     .our-works h3{
         text-align: center;
     }
+    .slogan-section{
+        width: 100%;
+    }
+    .slogan figure img{
+        height: 100px;
+    }
+
+    .slogan h1 {
+        font-size: 2.1em;
+    }
+    .slogan h2 {
+        font-size: 1.2em;
+    }
 }
