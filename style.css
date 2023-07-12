@@ -47,7 +47,8 @@ main {
     padding: 0 10%;
     margin: 0 auto;
 }
-main section{
+
+main section {
     margin: 1em 0;
 }
 
@@ -116,6 +117,7 @@ main section{
     filter: grayscale(.7);
     transition: all 250ms ease-in-out;
 }
+
 .wellcome figure img:hover {
     height: 300px;
     filter: none;
@@ -204,7 +206,7 @@ footer div {
     flex-direction: column;
     gap: 1em;
     padding: 1em;
-    
+
 }
 
 .location h3 {
@@ -219,38 +221,50 @@ footer div {
     border-radius: 5px;
     margin: 0 auto;
 }
-.our-works{
+
+.our-works {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.our-works{
+
+.our-works {
     font-size: 22px;
     /* border: solid chocolate; */
 }
-.gallery{
+
+.gallery {
     display: grid;
     gap: 1em;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.gallery figure{
+
+.gallery figure {
     width: inherit;
 }
-.gallery figure img{
+
+.gallery figure img {
     width: 100%;
     height: auto;
     filter: grayscale(.7) sepia(.5);
     transition: all 250ms ease-in-out;
 }
-.gallery figure img:hover{
+
+.gallery figure img:hover {
     filter: none;
 }
 
 
 @media (max-width: 800px) {
-    .slogan-section{
+    main {
+        min-width: 100%;
+        padding: 0 0;
+    }
+
+    .slogan-section {
         height: 300px;
     }
+
     .wellcome {
         flex-direction: column;
         text-align: center;
@@ -260,52 +274,63 @@ footer div {
     .wellcome figure {
         display: none;
     }
-    .location{
+
+    .location {
         display: flex;
         flex-direction: column;
     }
-    .location iframe{
+
+    .location iframe {
         width: 100%;
         aspect-ratio: 16/9;
     }
-    .services ul{
+
+    .services ul {
         display: flex;
         flex-direction: column;
     }
-    .services ul li{
+
+    .services ul li {
         display: flex;
         flex-direction: row;
         align-items: center;
         background-color: #2C271E90;
         border-radius: 5px;
     }
-    .services ul li div{
+
+    .services ul li div {
         display: flex;
         flex-direction: column;
         gap: 0.5em;
     }
-    .services ul li figure{
+
+    .services ul li figure {
         display: flex;
         padding: .5em;
     }
-    .gallery{
+
+    .gallery {
         display: grid;
         gap: 1em;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .our-works h3{
+
+    .our-works h3 {
         text-align: center;
     }
-    .slogan-section{
+
+    .slogan-section {
         width: 100%;
     }
-    .slogan figure img{
+
+    .slogan figure img {
         height: 100px;
     }
 
     .slogan h1 {
         font-size: 2.1em;
     }
+
     .slogan h2 {
         font-size: 1.2em;
     }
