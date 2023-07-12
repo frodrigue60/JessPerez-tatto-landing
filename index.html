@@ -19,10 +19,11 @@
         <div class="nav-content">
             <a href="#">Jess Perez</a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -42,7 +43,7 @@
             </div>
         </section>
         <hr>
-        <section class="wellcome">
+        <section id="about" class="wellcome">
             <figure>
                 <img src="https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80"
                     alt="">
@@ -61,7 +62,7 @@
             </article>
         </section>
         <hr>
-        <section class="services">
+        <section id="services" class="services">
             <header>
                 <h3>Nuestros servicios</h3>
             </header>
@@ -104,7 +105,7 @@
                 </li>
             </ul>
         </section>
-        <section class="our-works">
+        <section id="gallery" class="our-works">
             <header>
                 <h3>Nuestros trabajos</h3>
             </header>
@@ -129,7 +130,7 @@
                 </figure>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="location">
                 <header>
                     <h3>Ubicanos en google maps</h3>
@@ -166,10 +167,13 @@
     </main>
     <footer>
         <div class="footer-content">
-            <span>Jess Perez Studio</span>
-            <figure>
+            <div class="contact-data">
+                <span>Jess Perez Studio</span>
+                <a href="tel:+52 447 236 7894">Tel: 447 236 7894</a>
+            </div>
+            <!-- <figure>
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/a9663c28993821.55df18db7101a.png" alt="">
-            </figure>
+            </figure> -->
             <div>
                 <a class="social-button" href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a class="social-button" href="#"><i class="fa-brands fa-facebook"></i></a>
