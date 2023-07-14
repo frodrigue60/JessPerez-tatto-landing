@@ -35,6 +35,10 @@ nav {
     display: none;
 }
 
+.nav-content div button {
+    display: none;
+}
+
 nav a {
     color: aliceblue;
     text-decoration: none;
@@ -379,6 +383,11 @@ hr {
     border-color: #DAC297;
 }
 
+@media (max-width: 1100px) {
+    .wellcome{
+        padding: 1em 8em;
+    }
+}
 
 @media (max-width: 800px) {
     main {
@@ -410,6 +419,7 @@ hr {
     }
 
     .nav-content div button {
+        display: block;
         height: 100%;
         width: auto;
         aspect-ratio: 1/1;
@@ -438,11 +448,11 @@ hr {
         justify-content: center;
         /* border: solid 1px red; */
         padding: .5em 0;
-        transition: all 250ms ease-in-out;
     }
 
-    .slogan-section {
-        height: 300px;
+    .nav-content ul li:hover {
+        box-shadow: none;
+        background-color: #ffffff0f;
     }
 
     .wellcome {
@@ -505,6 +515,8 @@ hr {
 
     .slogan-section {
         width: 100%;
+        margin-top: 0;
+        height: 300px;
     }
 
     .slogan figure img {
