@@ -148,6 +148,7 @@ main section {
     height: 300px;
     filter: grayscale(.7);
     transition: all 250ms ease-in-out;
+    aspect-ratio: 1/1;
 }
 
 .wellcome figure img:hover {
@@ -159,7 +160,7 @@ main section {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
 }
 
@@ -179,6 +180,7 @@ main section {
 .services figure img {
     width: 100px;
     height: auto;
+    
     border-radius: 100%;
     filter: grayscale(1) sepia(1);
 }
