@@ -17,8 +17,11 @@
 <body>
     <nav>
         <div class="nav-content">
-            <a href="#">Jess Perez</a>
-            <ul>
+            <div>
+                <a href="#">Jess Perez</a>
+                <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <ul class="nav-links" id="menu-links">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#about">Sobre nosotros</a></li>
                 <li><a href="#services">Servicios</a></li>
@@ -147,15 +150,16 @@
                 <form action="">
                     <div>
                         <label for="e-mail">Correo</label>
-                        <input type="text" id="e-mail">
+                        <input type="text" id="e-mail" placeholder="Ejemplo@gmail.com">
                     </div>
                     <div>
                         <label for="n-tel">Teléfono</label>
-                        <input type="tel" id="n-tel">
+                        <input type="tel" id="n-tel" placeholder="447 236 7894">
                     </div>
                     <div>
                         <label for="msg-content">Mensaje</label>
-                        <textarea name="" id="msg-content" cols="" rows=""></textarea>
+                        <textarea name="" id="msg-content" cols="" rows="" required
+                            placeholder="Tu mensaje..."></textarea>
                     </div>
                     <div class="btn-submit-container">
                         <button type="submit">Enviar</button>
@@ -182,5 +186,7 @@
         </div>
     </footer>
 </body>
-
+    <script src="main.js"></script>
 </html>
+
+
